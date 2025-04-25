@@ -1,0 +1,27 @@
+<resources>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="primary_blue">#007BFF</color>
+    <color name="dark_gray">#555555</color>
+    <color name="button_blue">#4F46E5</color> <!-- or customize -->
+    <!-- Luma-style Gradient Colors -->
+    <color name="gradient_start">#FF7B53</color>     <!-- Soft Orange -->
+    <color name="gradient_center">#F667E4</color>    <!-- Hot Pink -->
+    <color name="gradient_end">#6A4FFF</color>       <!-- Purple Indigo -->
+
+    <!-- Text & Button Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="button_background">#FFFFFF</color>
+    <color name="button_text">#6A4FFF</color>
+
+    <!-- Optional Background/Shadow Colors -->
+    <color name="card_background">#F8F8F8</color>
+    <color name="shadow_color">#55000000</color>
+    <color name="text_white_high">#F1F1F1</color>
+
+
+</resources>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MyyEvent</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="signup">Sign Up</string>
+    <string name="go_to_login">Go to Login</string>
+    <string name="token_info">Your tokens are displayed below:</string>
+
+    <string name="welcome_title">Welcome to</string>
+    <string name="welcome_subtitle">Plan and join your favorite events</string>
+    <string name="get_started">Get Started</string>
+    <string name="welcome_illustration_desc">A girl dancing with headphones</string>
+
+    <!-- User Details -->
+    <string name="user_profile">User Profile</string>
+    <string name="user_details_placeholder">User Details will appear here</string>
+    <string name="user_details">Name: %1$s\nEmail: %2$s\nMobile: %3$s\nAge: %4$s</string>
+
+    <!-- Labels -->
+    <string name="name_label">Name:</string>
+    <string name="email_label">Email:</string>
+    <string name="mobile_label">Mobile:</string>
+    <string name="age_label">Age:</string>
+
+    <!--event -->
+
+    <string name="save_event">Save Event</string>
+    <string name="event_name">Event Name</string>
+    <string name="event_description">Event Description</string>
+    <string name="event_date">📅 Date</string>
+    <string name="event_location">📍 Location</string>
+
+    <string name="event_date_placeholder">📅 %1$s</string>-->
+    <string name="event_location_placeholder">📍 %1$s</string>
+
+    <string name="event_id_placeholder">Event ID: Loading...</string>
+    <string name="event_description_placeholder">Full Event Description</string>
+<!--    <string name="event_date_placeholder">Date </string>-->
+<!--    <string name="event_location_placeholder">Event Location</string>-->
+    <string name="user_id_placeholder">User ID: Loading...</string>
+    <string name="join_event">Join Event</string>
+    <!-- Buttons -->
+    <string name="logout">Logout</string>
+</resources>

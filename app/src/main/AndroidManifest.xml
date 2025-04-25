@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myyevent">
+
+    <!-- ✅ Required for Firebase & Firestore -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/Theme.MyEvent"
+        android:label="MyEvent"
+        android:supportsRtl="true">
+
+        <!-- 🔹 Splash Screen -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 🔹 Auth Screens -->
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignupActivity" />
+
+        <!-- 🔹 Main Dashboard -->
+        <activity android:name=".MainActivity" />
+
+        <!-- 🔹 Event-Related Screens -->
+        <activity android:name=".AddEventActivity" />
+        <activity android:name=".EventDetailsActivity" />
+
+    </application>
+
+</manifest>

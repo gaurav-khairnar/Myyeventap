@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".TokenDashboardFragment">
+
+    <!-- Token Info TextView -->
+    <TextView
+        android:id="@+id/tokenInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Active Tokens"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="8dp" />
+
+    <!-- Generate Token Button -->
+    <Button
+        android:id="@+id/btnGenerateToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Token"
+        app:layout_constraintTop_toBottomOf="@id/tokenInfoTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:id="@+id/filterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/btnGenerateToken"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnShowAll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="All"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnShowActive"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Active"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnShowInactive"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Inactive"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Modify RecyclerView Top Constraint -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tokenRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@id/filterLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
